@@ -1,8 +1,8 @@
 :root {
   --main-bg-color: #f0f0f0;
-  --main-text-color: #333;
-  --primary-color: rgb(0, 147 , 85);
-  --secondary-color: rgba(255, 255, 255, 0.8);
+  --main-text-color: #333333; /* Darker gray for better contrast */
+  --primary-color: #006639; /* Darker green for better contrast */
+  --secondary-color: #ffffff; /* Solid white for clarity */
   --font-size-h1: 36px;
   --font-size-h2: 20px;
 }
@@ -23,7 +23,7 @@ header {
   display: grid;
   grid-gap: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 30px #333;
+  box-shadow: 0 0 30px #333333;
 }
 
 header,
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  color: black;
+  color: var(--main-text-color);
   padding: 10px;
 }
 
@@ -61,6 +61,7 @@ h2 {
 p {
   text-align: center;
   font-size: smaller;
+  color: var(--main-text-color);
 }
 
 .weather-container,
@@ -70,6 +71,7 @@ p {
   padding: 10px;
   border-radius: 5px;
   text-align: center;
+  color: var(--main-text-color);
 }
 
 .weather-container img {
@@ -93,11 +95,9 @@ footer {
 
 footer p {
   margin: 0;
-  color: rgb(253, 216, 5);
+  color: #ffcc00; /* Slightly darker yellow for better contrast */
 }
 
 footer p span {
-  
   font-weight: lighter;
 }
-
