@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #f0f0f0;
   --main-text-color: #333;
-  --primary-color: rgb(0, 147, 83);
+  --primary-color: rgb(0, 147 , 85);
   --secondary-color: rgba(255, 255, 255, 0.8);
   --font-size-h1: 36px;
   --font-size-h2: 20px;
@@ -93,9 +93,11 @@ footer {
 
 footer p {
   margin: 0;
-  color: rgb(253, 208, 5);
+  color: rgb(253, 216, 5);
 }
 
 footer p span {
+  
   font-weight: lighter;
 }
+
