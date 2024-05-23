@@ -48,6 +48,7 @@ dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span
 
 
 
+
 function toggleNav() {
     var nav = document.querySelector('nav');
     var hamburgerIcon = document.getElementById('hamburgerIcon');
@@ -56,4 +57,25 @@ function toggleNav() {
     nav.classList.toggle('active');
     hamburgerIcon.style.display = hamburgerIcon.style.display === 'none' ? 'block' : 'none';
     closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
+}
+
+
+
+
+
+
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    var hamburgerIcon = document.getElementById('hamburgerIcon');
+    var closeIcon = document.getElementById('closeIcon');
+
+    nav.classList.toggle('active');
+    
+    if (hamburgerIcon.style.display === 'none') {
+        hamburgerIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+    } else {
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+    }
 }
