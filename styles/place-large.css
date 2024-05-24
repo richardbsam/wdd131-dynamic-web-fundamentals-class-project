@@ -34,7 +34,7 @@
     color:white;
     font-size: 20px;
   }
-  
+
   /* Pseudo-element for the weather icon */
   .weather-header h2::after {
     content: "⛅️"; /* Unicode character for the weather icon */
