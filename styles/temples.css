@@ -1,14 +1,14 @@
 :root {
-  --main-bg-color: white;
-  --main-text-color: black;
-  --header-bg-color: rgb(0, 147, 83);
-  --header-text-color: white;
-  --nav-bg-color: #333;
-  --nav-text-color: #fff;
-  --nav-active-color: yellow;
-  --footer-bg-color: rgb(0, 147, 83);
-  --footer-text-color: white;
-  --footer-highlight-color: rgb(253, 208, 5);
+  --main-bg-color: #f0f0f0; /* Light gray background */
+  --main-text-color: #333333; /* Darker gray for better contrast */
+  --header-bg-color: #005f33; /* Darker green for better contrast */
+  --header-text-color: #ffffff; /* White for clarity */
+  --nav-bg-color: #333333; /* Dark gray for better contrast */
+  --nav-text-color: #ffffff; /* White for clarity */
+  --nav-active-color: #ffcc00; /* Bright yellow for active links */
+  --footer-bg-color: #005f33; /* Darker green for better contrast */
+  --footer-text-color: #ffffff; /* White for clarity */
+  --footer-highlight-color: #e5a00d; /* Darker yellow for better contrast */
   --font-family: "Roboto", sans-serif;
   --font-size: 15px;
   --h1-font-size: 30px;
@@ -26,6 +26,8 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-style: normal;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 }
 
 header {
@@ -37,7 +39,7 @@ header {
   justify-content: space-between;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 30px #333; 
+  box-shadow: 0 0 30px #333333; 
 }
 
 main {
@@ -69,7 +71,6 @@ nav {
   gap: 20px;
   flex-direction: column;
   display: none; /* Initially hidden on mobile */
-  flex-direction: column;
   background-color: var(--nav-bg-color);
   position: absolute;
   top: 60px;
@@ -89,7 +90,7 @@ nav a {
 nav a:hover {
   font-weight: 800;
   text-decoration: underline double;
-  text-decoration-color: yellowgreen;
+  text-decoration-color: #aad400; /* Yellow-green for contrast */
 }
 
 .active {
@@ -141,10 +142,11 @@ figcaption,
 p {
   text-align: center;
   font-size: smaller;
+  color: var(--main-text-color);
 }
 
 .hover:hover {
-  box-shadow: 0 0 50px #333;
+  box-shadow: 0 0 50px #333333;
 }
 
 footer {

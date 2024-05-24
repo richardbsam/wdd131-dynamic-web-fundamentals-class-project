@@ -1,48 +1,69 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current year and populate the span
+    const currentYearSpan = document.getElementById("currentyear");
+    if (currentYearSpan) {
+        currentYearSpan.innerText = new Date().getFullYear();
+    }
 
+    // Get the last modified date of the document and populate the second paragraph
+    const lastModifiedParagraph = document.getElementById("lastModified");
+    if (lastModifiedParagraph) {
+        lastModifiedParagraph.innerText = "Last modified: " + document.lastModified;
+    }
 
-// Get the current year and populate the span
-document.getElementById("currentyear").innerText = new Date().getFullYear();
+    // Select other elements
+    const full = document.getElementById("full");
+    const worldFull = document.getElementById("worldfull");
+    const short = document.getElementById("short");
+    const medium = document.getElementById("medium");
+    const year = document.getElementById("year");
+    const month = document.getElementById("month");
+    const day = document.getElementById("day");
+    const dayOfWeek = document.getElementById("dayofweek");
 
-// Get the last modified date of the document and populate the second paragraph
-document.getElementById("lastModified").innerText = "Last modified: " + document.lastModified;
+    // Use the date object
+    const today = new Date();
 
+    // Populate different date formats
+    if (full) {
+        full.innerHTML = `Today is <span class="highlight">${new Intl.DateTimeFormat(
+            "en-US",
+            { dateStyle: "full" }
+        ).format(today)}</span>`;
+    }
+    if (worldFull) {
+        worldFull.innerHTML = `UK: <span class="highlight">${new Intl.DateTimeFormat(
+            "en-UK",
+            { dateStyle: "full" }
+        ).format(today)}</span>`;
+    }
+    if (short) {
+        short.innerHTML = `Short: <span class="highlight">${new Intl.DateTimeFormat(
+            "en-US",
+            { dateStyle: "short" }
+        ).format(today)}</span>`;
+    }
+    if (medium) {
+        medium.innerHTML = `Medium: <span class="highlight">${new Intl.DateTimeFormat(
+            "en-US",
+            { dateStyle: "medium" }
+        ).format(today)}</span>`;
+    }
 
-const year = document.querySelector("#year");
-
-document.querySelector("#dayofweek");
-
-// use the date object
-const today = new Date();
-
-full.innerHTML = `Today is <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-worldfull.innerHTML = `UK: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-UK",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-short.innerHTML = `Short: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "short"
-	}
-).format(today)}</span>`;
-medium.innerHTML = `Medium: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "medium"
-	}
-).format(today)}</span>`;
-
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
-month.innerHTML = `getMonth(): <span class="highlight">${today.getMonth()}</span>`;
-day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
-dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
+    // Populate other date-related information
+    if (year) {
+        year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
+    }
+    if (month) {
+        month.innerHTML = `getMonth(): <span class="highlight">${today.getMonth()}</span>`;
+    }
+    if (day) {
+        day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
+    }
+    if (dayOfWeek) {
+        dayOfWeek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
+    }
+});
 
 
 
