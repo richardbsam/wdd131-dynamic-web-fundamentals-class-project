@@ -98,7 +98,10 @@ main {
   margin: 0 auto;
 }
 
-
+.logo {
+  width: 50%;
+  height: auto;
+}
 
 
 
