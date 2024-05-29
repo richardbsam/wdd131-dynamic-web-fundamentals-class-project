@@ -4,18 +4,41 @@
     display: flex;
     justify-content: flex-end;
 		flex-direction: row;
-    background-color: #005f33;
+    background-color: var(--header-bg-color);
     max-width: 400px;
     position: relative;
     top: 0;
     align-items: flex-end;
   }
+
   .hamburger {
     display: none; /* Initially hidden */
   }
 
-   .image-container {
+  .image-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   }
 
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
