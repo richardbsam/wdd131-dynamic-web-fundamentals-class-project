@@ -98,15 +98,6 @@ main {
   margin: 0 auto;
 }
 
-.logo {
-  width: 50%;
-  height: auto;
-}
-
-
-
-
-
 .hero {
   position: relative;
   text-align: center;
@@ -116,7 +107,7 @@ main {
 .hero-image {
   width: 100%;
   height: auto;
-  display: block;
+ 
 }
 
 .hero-text {
@@ -179,11 +170,12 @@ footer p span {
 /* about us */
 .about {
   text-align: center;
-  padding: 50px 20px;
+  
 }
 
 .about-header {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .about-content {
