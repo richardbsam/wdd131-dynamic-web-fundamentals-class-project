@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --main-bg-color: #f0f0f0;
+  --main-text-color: #333333; /* Darker gray for better contrast */
+  --primary-color: #006639; /* Darker green for better contrast */
+  --secondary-color: #ffffff; /* Solid white for clarity */
+  --font-size-h1: 36px;
+  --font-size-h2: 20px;
+}
+
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333333;
+}
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+
+
+
+main {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+fieldset {
+  margin-top: 10px;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #ffcc00; /* Slightly darker yellow for better contrast */
+}
+
+footer p span {
+  font-weight: lighter;
+}
