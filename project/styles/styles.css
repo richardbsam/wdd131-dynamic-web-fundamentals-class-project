@@ -163,3 +163,30 @@ footer p {
 footer p span {
   font-weight: lighter;
 }
+
+
+
+
+
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
