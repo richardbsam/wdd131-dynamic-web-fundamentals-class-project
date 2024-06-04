@@ -169,24 +169,57 @@ footer p span {
 
 
 
-.about-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+
+
+
+
+
+
+.about {
+  text-align: center;
 }
 
-.about-text {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+.about-header {
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+ font-size: 50px;
+ 
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .about-section {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
 }
+
+.about-image-container {
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text h2 {
+  color: var(--header-bg-color);
+}
+
