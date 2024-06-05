@@ -7,11 +7,11 @@
 :root {
   --main-bg-color: #ffffff;
   --main-text-color: #2c3e50;
-  --header-bg-color: #4CAF50;
+  --header-bg-color: #005f33;
   --header-text-color: #ffffff;
   --nav-bg-color: #333333;
   --nav-text-color: #ffffff;
-  --footer-bg-color: #4CAF50;
+  --footer-bg-color: #005f33;
   --footer-text-color: #ffffff;
   --footer-highlight-color: #e5a00d; /* Darker yellow for better contrast */
   --font-family: 'Roboto', sans-serif;
@@ -117,6 +117,10 @@ main {
   border-radius: 10px;
 }
 
+header p {
+  color: white;
+}
+
 .articles {
   display: grid;
   grid-template-columns: 1fr;
@@ -172,8 +176,7 @@ footer p span {
 
 
 
-
-
+/* About Us Styling */
 
 .about {
   text-align: center;
@@ -223,3 +226,28 @@ footer p span {
   color: var(--header-bg-color);
 }
 
+
+
+
+
+/* Contact Us Styling*/
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+}
