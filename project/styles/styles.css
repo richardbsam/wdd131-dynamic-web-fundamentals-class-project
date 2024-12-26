@@ -7,7 +7,7 @@
 :root {
   --main-bg-color: #ffffff;
   --main-text-color: #2c3e50;
-  --header-bg-color: #005f33;
+  --header-bg-color:rgb(0, 140, 80);
   --header-text-color: #ffffff;
   --nav-bg-color: #333333;
   --nav-text-color: #ffffff;
@@ -155,7 +155,6 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-
   width: 100%;
 }
 
